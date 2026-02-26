@@ -6,7 +6,7 @@ import projects from '../data/projects.json';
 <Layout title="Erwan | DevOps Engineer">
     <nav class="fixed w-full z-50 glass-effect border-b border-slate-200 dark:border-slate-800">
         <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
-            <span class="text-xl font-bold text-blue-600 italic">Erwan Suka Ngulik Tech</span>
+            <span class="text-xl font-bold text-blue-600 italic">Erwan.</span>
             <div class="flex items-center space-x-6">
                 <div class="hidden md:flex space-x-6 text-xs font-bold uppercase tracking-wider">
                     <a href="#home" class="hover:text-blue-600 transition-colors">Beranda</a>
@@ -14,10 +14,10 @@ import projects from '../data/projects.json';
                     <a href="#portfolio" class="hover:text-blue-600 transition-colors">Proyek</a>
                     <a href="#contact" class="hover:text-blue-600 transition-colors">Kontak</a>
                 </div>
-                <button id="themeToggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-yellow-400 cursor-pointer">
-                    <i class="fa-solid fa-moon dark:hidden"></i>
-                    <i class="fa-solid fa-sun hidden dark:block"></i>
-                </button>
+                <button onclick="document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');" class="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-yellow-400 cursor-pointer transition-colors hover:bg-slate-300 dark:hover:bg-slate-700">
+    <i class="fa-solid fa-moon icon-moon text-lg"></i>
+    <i class="fa-solid fa-sun icon-sun text-lg"></i>
+</button>
             </div>
         </div>
     </nav>
@@ -40,7 +40,7 @@ import projects from '../data/projects.json';
             <div class="flex-1 flex justify-center">
                 <div class="relative">
                     <div class="absolute -inset-4 bg-blue-600/20 rounded-[3rem] blur-3xl"></div>
-                    <img src="/foto-erwan.png" alt="Erwan" 
+                    <img src="/foto-erwan.jpg" alt="Erwan" 
                          class="relative rounded-[2.5rem] w-72 h-80 md:w-96 md:h-[32rem] object-cover object-top shadow-2xl border-4 border-white dark:border-slate-800">
                 </div>
             </div>
@@ -184,12 +184,5 @@ import projects from '../data/projects.json';
         <p class="text-slate-600 text-sm italic">© 2026 Erwan Sky. Built with Passion using Astro & Tailwind.</p>
     </footer>
 
-    <script is:inline>
-        const themeToggle = document.getElementById('themeToggle');
-        themeToggle.addEventListener('click', () => {
-            const element = document.documentElement;
-            element.classList.toggle('dark');
-            localStorage.setItem('theme', element.classList.contains('dark') ? 'dark' : 'light');
-        });
-    </script>
+    
 </Layout>
