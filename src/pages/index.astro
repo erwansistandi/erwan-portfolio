@@ -12,12 +12,12 @@ import projects from '../data/projects.json';
                     <a href="#home" class="hover:text-blue-600 transition-colors">Beranda</a>
                     <a href="#about" class="hover:text-blue-600 transition-colors">Profil</a>
                     <a href="#portfolio" class="hover:text-blue-600 transition-colors">Proyek</a>
-                    <a href="#contact" class="hover:text-blue-600 transition-colors">Kontak</a>
+                    <a href="#artikel" class="hover:text-blue-600 transition-colors">Artikel</a> <a href="#contact" class="hover:text-blue-600 transition-colors">Kontak</a>
                 </div>
                 <button onclick="document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');" class="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-yellow-400 cursor-pointer transition-colors hover:bg-slate-300 dark:hover:bg-slate-700">
-    <i class="fa-solid fa-moon icon-moon text-lg"></i>
-    <i class="fa-solid fa-sun icon-sun text-lg"></i>
-</button>
+                    <i class="fa-solid fa-moon icon-moon text-lg"></i>
+                    <i class="fa-solid fa-sun icon-sun text-lg"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -154,6 +154,61 @@ import projects from '../data/projects.json';
         </div>
     </section>
 
+    <section id="artikel" class="py-24 px-6 bg-slate-50 dark:bg-slate-900/20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 uppercase tracking-widest font-mono">/ ARTIKEL & TULISAN /</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <a href="LINK_MEDIUM_KAMU_DI_SINI" target="_blank" class="group bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-200 dark:border-slate-800 hover:shadow-xl hover:border-black dark:hover:border-white transition-all flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-[10px] font-black bg-slate-100 dark:bg-slate-800 text-slate-500 px-3 py-1 rounded-full uppercase tracking-widest">Tutorial</span>
+                            <i class="fa-brands fa-medium text-3xl text-slate-800 dark:text-white"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 leading-snug group-hover:text-blue-600 transition-colors">Panduan Lengkap Setup Homelab dengan Proxmox</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm mb-6 line-clamp-3">Langkah demi langkah membangun server lokal yang tangguh untuk kebutuhan eksperimen DevOps dan kontainerisasi.</p>
+                    </div>
+                    <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                        Baca di Medium <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </a>
+
+                <a href="LINK_MEDIUM_KAMU_DI_SINI" target="_blank" class="group bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-200 dark:border-slate-800 hover:shadow-xl hover:border-black dark:hover:border-white transition-all flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-[10px] font-black bg-slate-100 dark:bg-slate-800 text-slate-500 px-3 py-1 rounded-full uppercase tracking-widest">Opini</span>
+                            <i class="fa-brands fa-medium text-3xl text-slate-800 dark:text-white"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 leading-snug group-hover:text-blue-600 transition-colors">Mengapa Docker Wajib Dikuasai Web Developer?</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm mb-6 line-clamp-3">Membahas pentingnya lingkungan pengembangan yang terisolasi dan bagaimana kontainer menyelamatkan kita dari masalah klasik server.</p>
+                    </div>
+                    <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                        Baca di Medium <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </a>
+
+                <a href="LINK_MEDIUM_KAMU_DI_SINI" target="_blank" class="group bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-200 dark:border-slate-800 hover:shadow-xl hover:border-black dark:hover:border-white transition-all flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-[10px] font-black bg-slate-100 dark:bg-slate-800 text-slate-500 px-3 py-1 rounded-full uppercase tracking-widest">Tips</span>
+                            <i class="fa-brands fa-medium text-3xl text-slate-800 dark:text-white"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 leading-snug group-hover:text-blue-600 transition-colors">Praktik Terbaik Mengamankan Jaringan dengan pfSense</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm mb-6 line-clamp-3">Implementasi aturan firewall yang solid untuk mencegah akses tidak sah ke dalam infrastruktur internal perusahaan.</p>
+                    </div>
+                    <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                        Baca di Medium <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="https://medium.com/@usernamekamu" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-2xl hover:scale-105 transition-transform shadow-lg">
+                    <i class="fa-brands fa-medium text-xl"></i> Kunjungi Profil Medium Saya
+                </a>
+            </div>
+        </div>
+    </section>
     <section id="contact" class="py-24 px-6">
         <div class="max-w-5xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-8">Mari Berkolaborasi</h2>
@@ -199,5 +254,4 @@ import projects from '../data/projects.json';
         <p class="text-slate-600 text-sm italic">© 2026 Erwan Sky. Built with Passion using Astro & Tailwind.</p>
     </footer>
 
-    
 </Layout>
