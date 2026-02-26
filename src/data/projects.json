@@ -1,0 +1,26 @@
+[
+  {
+    "title": "SIM Klinik BPJS Integration",
+    "category": "Web Development",
+    "desc": "Sistem informasi klinik dengan fitur bridging API BPJS menggunakan PostgreSQL.",
+    "tech": ["PHP", "PostgreSQL", "Tailwind"],
+    "link": "#",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800"
+  },
+  {
+    "title": "Automated Homelab",
+    "category": "DevOps",
+    "desc": "Infrastruktur server lokal menggunakan HP ProDesk 400 G9 dengan Proxmox dan Docker.",
+    "tech": ["Docker", "Proxmox", "Linux"],
+    "link": "#",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800"
+  },
+  {
+    "title": "Server Management Dashboard",
+    "category": "SaaS",
+    "desc": "Aplikasi web untuk mengelola banyak server tanpa perlu menghafal IP dan password.",
+    "tech": ["JavaScript", "PostgreSQL", "Docker"],
+    "link": "#",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800"
+  }
+]
